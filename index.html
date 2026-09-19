@@ -102,13 +102,13 @@
 <header>
   <h1>DEAD PASSAGE</h1>
   <div class="subtitle">Privacy Policy</div>
-  <div class="meta">Effective Date: May 17, 2026 &nbsp;·&nbsp; Last Updated: May 17, 2026</div>
+  <div class="meta">Effective Date: May 17, 2026 &nbsp;·&nbsp; Last Updated: September 19, 2026</div>
 </header>
 
 <main>
 
 <div class="highlight">
-  <p><strong>The short version:</strong> Dead Passage does not collect, store, or transmit any personal information about you. All your game progress (scrap, tokens, pets, settings) is saved locally on your device. We use Google AdMob to show optional rewarded video ads.</p>
+  <p><strong>The short version:</strong> Dead Passage never asks for your name, email, contacts or GPS location, and there is no account to create. Your game progress is saved on your device and backed up to our cloud save under a random anonymous ID. We use Google AdMob for optional rewarded video ads, Firebase Analytics to understand how the game is played, and Google Play Games Services for achievements.</p>
 </div>
 
 <h2>1. Introduction</h2>
@@ -119,14 +119,13 @@
 <p>Dead Passage is designed with privacy first. We do <strong>not</strong> collect, request, store, or transmit any of the following:</p>
 <ul>
   <li>Your name, email address, phone number, or any other personal contact information</li>
-  <li>Your real-world location or GPS data</li>
+  <li>Your precise (GPS) location</li>
   <li>Your contacts, photos, microphone, or camera</li>
   <li>Account credentials of any kind (Dead Passage does not require an account)</li>
-  <li>Behavioral tracking or analytics tied to your identity</li>
 </ul>
 
-<h2>3. Information Stored on Your Device</h2>
-<p>The Game stores the following information <strong>locally on your device only</strong>. This data never leaves your device and is not transmitted to us or any third party:</p>
+<h2>3. Your Game Data and Cloud Save</h2>
+<p>The Game stores the following information on your device and backs it up to our cloud save (Google Firebase), so your progress is kept safe:</p>
 <ul>
   <li><strong>Game progress:</strong> current level, wave, kills, score, and combo state</li>
   <li><strong>In-game currency:</strong> scrap and tokens earned through play</li>
@@ -134,7 +133,10 @@
   <li><strong>Settings:</strong> music and sound effect volume preferences, control settings</li>
   <li><strong>Persistent counters:</strong> daily login state, achievement progress</li>
 </ul>
-<p>This data is saved using your device's standard local storage. Uninstalling Dead Passage will delete all locally stored data permanently.</p>
+<p>The cloud copy is stored under a random anonymous ID that Firebase creates the first time you open the Game. It is not linked to your name, email address or Google account. Uninstalling Dead Passage deletes the copy on your device.</p>
+
+<h3>The Kill Board</h3>
+<p>The in-game Kill Board (leaderboard) shows other players a randomly generated callsign (for example GHOST-COURIER-672) and your total zombie kills. It is stored in our Firebase database under the same anonymous ID. You never type in a name, and nothing else about you is shown.</p>
 
 <h2>4. Advertising — Google AdMob</h2>
 <p>Dead Passage uses <strong>Google AdMob</strong> to show optional rewarded video ads. These ads are always player-initiated (you choose to watch them in exchange for in-game rewards such as extra HP, bonus scrap, or a continue after death). We do not show forced interstitial ads.</p>
@@ -152,40 +154,55 @@
 </ul>
 <p>You can reset your advertising ID or opt out of personalized advertising at any time through your device's settings.</p>
 
-<h2>5. Children's Privacy</h2>
+<h2>5. Analytics — Firebase Analytics</h2>
+<p>Dead Passage uses <strong>Google Firebase Analytics</strong> to understand how the Game is played, for example how many players finish the training range, which chapters are too hard, and which rewards get used, so we can improve it. Firebase Analytics may collect:</p>
+<ul>
+  <li>An app-instance ID and the advertising ID</li>
+  <li>Approximate location based on IP address</li>
+  <li>App interactions, such as sessions, screens viewed, levels started and finished, daily rewards claimed and rewarded ads watched</li>
+  <li>Device information (model, operating system version)</li>
+</ul>
+<p>We do not send your name, email address or contacts to Firebase Analytics. Learn how Google uses this information: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a>.</p>
+
+<h2>6. Google Play Games Services</h2>
+<p>If you are signed in to Google Play Games on your device, Dead Passage uses <strong>Google Play Games Services</strong> for achievements and game statistics (for example zombies eliminated and chapters cleared). This information is sent to Google and shown on your Play Games profile, under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+<h2>7. Children's Privacy</h2>
 <p>Dead Passage is <strong>not directed at children under 13 years of age</strong>. The Game contains depictions of zombies, weapons, and stylized combat that may not be appropriate for younger audiences. The Game's age rating on Google Play reflects this.</p>
 <p>We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with information through use of the Game, please contact us so we can take appropriate action.</p>
 
-<h2>6. Permissions Requested</h2>
+<h2>8. Permissions Requested</h2>
 <p>Dead Passage requests only the minimum permissions necessary for the Game to function:</p>
 <ul>
-  <li><strong>Internet access:</strong> required only to load advertisements through Google AdMob</li>
+  <li><strong>Internet access:</strong> used to load rewarded ads, back up your progress, update the Kill Board, and send the analytics and Play Games data described above</li>
   <li><strong>Vibration:</strong> used for haptic feedback during gameplay (gunshots, hits, damage)</li>
 </ul>
 <p>The Game does not request access to your contacts, photos, location, microphone, camera, or storage.</p>
 
-<h2>7. Data Security</h2>
-<p>Because Dead Passage does not collect or transmit personal data to our servers, there is no central database that could be compromised. Your game data resides entirely on your device, protected by the security mechanisms of your device and operating system.</p>
+<h2>9. Data Security</h2>
+<p>All data the Game sends travels over encrypted connections (TLS). Your cloud save and Kill Board entry are stored in Google Firebase and protected by Google's security infrastructure. Because the Game never asks for your name, email or contacts, none of that is stored anywhere.</p>
 
-<h2>8. Third-Party Services Summary</h2>
-<p>The only third-party service integrated into Dead Passage is:</p>
+<h2>10. Third-Party Services Summary</h2>
+<p>Dead Passage uses these Google services:</p>
 <ul>
-  <li><strong>Google AdMob</strong> — for serving rewarded video ads when you opt in to watch them</li>
+  <li><strong>Google AdMob</strong> — rewarded video ads when you opt in to watch them</li>
+  <li><strong>Google Firebase</strong> — anonymous sign-in, the cloud save, the Kill Board, and Firebase Analytics</li>
+  <li><strong>Google Play Games Services</strong> — achievements and game statistics</li>
 </ul>
-<p>We do not use Google Analytics, Firebase Analytics, Facebook SDK, or any other tracking or analytics services in Dead Passage.</p>
+<p>We do not use the Facebook SDK or any other advertising or tracking service beyond those listed above.</p>
 
-<h2>9. Your Rights</h2>
-<p>Since Dead Passage does not collect personal data, traditional data-rights requests (access, correction, deletion) do not apply. However, you retain full control over your local game data:</p>
+<h2>11. Your Rights</h2>
+<p>Dead Passage never asks for personal information such as your name or email. You stay in control of your game data:</p>
 <ul>
   <li><strong>To clear your local game data:</strong> uninstall Dead Passage from your device, or use Android's "Clear data" option in app settings</li>
   <li><strong>To opt out of personalized advertising:</strong> reset your advertising ID in your device's settings, or enable "Opt out of Ads Personalization" in Google settings</li>
 </ul>
 
-<h2>10. Changes to This Policy</h2>
+<h2>12. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time to reflect changes in our practices, the Game, or applicable laws. When we make changes, we will update the "Last Updated" date at the top of this page. Significant changes will be communicated through an update to the Game itself or through the Google Play Store listing.</p>
 <p>Your continued use of Dead Passage after changes to this policy constitutes your acceptance of the revised terms.</p>
 
-<h2>11. Contact Us</h2>
+<h2>13. Contact Us</h2>
 <p>If you have any questions, concerns, or feedback about this Privacy Policy or about Dead Passage, please reach out:</p>
 <ul>
   <li><strong>Studio:</strong> Max &amp; Jax Studios</li>
